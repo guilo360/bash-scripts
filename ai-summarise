@@ -1,0 +1,6 @@
+#! /bin/bash
+
+touch ./ai.input
+less "$1" > ai.input 
+cat ai.input | docker exec -i ollama ollama run llama3.2
+rm ai.input

@@ -1,0 +1,9 @@
+#! /bin/bash
+#
+# makes a new bash script with name <1st-argument> and sets up your editor
+
+cd ~/.local/bin 
+touch $1
+echo "#! /bin/bash" >> $1
+chmod +x $1
+nvim $1
