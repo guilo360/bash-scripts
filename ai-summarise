@@ -1,4 +1,16 @@
 #! /bin/bash
+#
+# This command works with
+# - .html
+# - .odt
+#
+# This command does not work with
+# - .doc, .docx
+# - .pdf
+#
+# Can be made to do so using calibre/libreoffice or any other number of tools
+#
+
 
 touch ./ai.input
 less "$1" > ai.input 
