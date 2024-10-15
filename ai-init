@@ -1,4 +1,7 @@
 #! /bin/bash
 #
+# This piece of code gets the ollama docker image from dockerhub and gets it running
+# Bash is so quick and dirty - this could be done a lot better
+
 docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 
